@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arthur Bermond | Desenvolvedor de Software</title>
+  <meta name="description" content="Desenvolvedor de software júnior em Vitória, ES. ERP, Delphi, Firebird, Git e IA aplicada ao desenvolvimento.">
+  <meta property="og:title" content="Arthur Bermond | Desenvolvedor de Software">
+  <meta property="og:description" content="ERP, Delphi, Firebird, Git e IA aplicada ao desenvolvimento.">
+  <meta property="og:image" content="img/arthur.png">
+
+  <!-- fontes do Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%231E3A8A%27/%3E%3Ctext x=%2732%27 y=%2742%27 font-family=%27Arial%27 font-weight=%27bold%27 font-size=%2728%27 text-anchor=%27middle%27 fill=%27white%27%3EAB%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- marca que o JS está ligado, o CSS usa isso pras animações -->
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <!-- barra de progresso da rolagem -->
+  <div class="progresso" id="progresso"></div>
+
+  <!-- brilho que segue o mouse -->
+  <div class="brilho-mouse" id="brilho"></div>
+
+  <header class="topo">
+    <nav class="menu" aria-label="Seções">
+      <a href="#inicio" class="logo">AB<span>.</span></a>
+      <div class="links">
+        <a href="#sobre">sobre</a>
+        <a href="#experiencia">experiência</a>
+        <a href="#projeto">projeto</a>
+        <a href="#ia">IA</a>
+        <a href="#stack">stack</a>
+        <a href="#contato">contato</a>
+      </div>
+      <button class="btn-tema" id="btnTema" type="button" aria-label="Trocar tema claro e escuro">
+        <span class="icone-tema"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== INÍCIO ========== -->
+    <section class="inicio" id="inicio">
+      <!-- bolinhas coloridas de fundo -->
+      <div class="fundo" aria-hidden="true">
+        <span class="bolha b1"></span>
+        <span class="bolha b2"></span>
+        <span class="bolha b3"></span>
+      </div>
+
+      <div class="container inicio-grid">
+        <div class="foto-area aparecer">
+          <div class="foto-anel">
+            <img class="foto" src="img/arthur.png" alt="Foto de Arthur Bermond sorrindo">
+          </div>
+          <span class="selo">Vitória, ES</span>
+        </div>
+
+        <div class="inicio-texto aparecer">
+          <p class="oi">Olá, eu sou o</p>
+          <h1>Arthur <span class="destaque">Bermond</span></h1>
+          <p class="digitando">
+            <span id="digitando"></span><span class="cursor">|</span>
+          </p>
+          <p class="resumo">
+            Desenvolvedor de software júnior. Mantenho e evoluo sistemas ERP com Delphi e Firebird
+            e uso IA de forma estratégica para entregar mais rápido, com testes e com qualidade.
+          </p>
+          <div class="botoes">
+            <a class="botao principal" href="#contato">Falar comigo</a>
+            <a class="botao" href="https://www.linkedin.com/in/arthur-bermond-10b3942a9/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="botao" href="https://github.com/Arthur-bermond04" target="_blank" rel="noopener">GitHub</a>
+            <a class="botao" href="https://gitlab.com/Arthur-bermond04" target="_blank" rel="noopener">GitLab</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <ul class="resumo-cards">
+          <li class="mini aparecer">
+            <small>trabalho atual</small>
+            <strong>Athenas Tecnologia</strong>
+          </li>
+          <li class="mini aparecer">
+            <small>na empresa desde</small>
+            <strong>agosto de 2025</strong>
+          </li>
+          <li class="mini aparecer">
+            <small>em ~14 meses</small>
+            <strong>800+ commits · 50+ scripts SQL</strong>
+          </li>
+          <li class="mini aparecer">
+            <small>formação</small>
+            <strong>Sistemas de Informação, UVV</strong>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== SOBRE ========== -->
+    <section class="secao" id="sobre">
+      <div class="container">
+        <h2 class="titulo aparecer"><span>01</span> Sobre mim</h2>
+        <div class="sobre-grid">
+          <div class="aparecer">
+            <p>Comecei na Athenas como estagiário, trabalhando com testes, e fui assumindo mais responsabilidade até resolver problemas técnicos de forma independente. Desde agosto de 2026 sou desenvolvedor júnior.</p>
+            <p>Em cerca de 14 meses, contribuí com mais de 800 commits e construí mais de 50 scripts SQL. Também atuo no desenvolvimento web, com PHP, JavaScript, HTML e CSS.</p>
+            <p>No dia a dia eu corrijo bugs, crio rotinas, relatórios e regras de negócio, otimizo consultas no Firebird, faço builds e deploys e participo de reuniões com clientes para validar o que entrego.</p>
+            <p>Uso IA (como o Claude Code) como parte do processo: para depurar, refatorar, gerar testes e documentar. Ela me dá velocidade, e eu garanto a revisão e a qualidade do que vai para produção.</p>
+            <p>Antes da tecnologia fui Jovem Aprendiz na Gol Linhas Aéreas, onde recebi proposta de efetivação em apenas três meses. Trouxe de lá a rotina de prazo curto e o cuidado com o atendimento.</p>
+          </div>
+          <ul class="qualidades aparecer">
+            <li>Resolução de problemas</li>
+            <li>Pensamento analítico</li>
+            <li>Aprendizado contínuo</li>
+            <li>Autonomia</li>
+            <li>Comunicação clara</li>
+            <li>Organização de prioridades</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EXPERIÊNCIA ========== -->
+    <section class="secao" id="experiencia">
+      <div class="container">
+        <h2 class="titulo aparecer"><span>02</span> Experiência</h2>
+
+        <div class="linha-tempo">
+
+          <article class="item aparecer">
+            <span class="bolinha"></span>
+            <div class="card">
+              <p class="data">08/2026 – presente · Vitória</p>
+              <h3>Desenvolvedor de Software Júnior</h3>
+              <p class="empresa">Athenas Tecnologia em Softwares</p>
+              <ul>
+                <li>Desenvolvimento e manutenção de sistemas ERP.</li>
+                <li>Criação de rotinas, relatórios e regras de negócio.</li>
+                <li>Debug, causa raiz de problemas, correção de bugs e refatoração.</li>
+                <li>Consultas e otimização em banco Firebird.</li>
+                <li>Desenvolvimento web com PHP, JavaScript e HTML/CSS em sistemas da empresa.</li>
+                <li>Builds e deploys em pré-produção e produção, com Git (branches, merges e releases).</li>
+                <li>Criação e manutenção de testes, análise de requisitos e reuniões com clientes.</li>
+                <li>Ferramentas de IA para scripts e apoio na implementação de funcionalidades.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="item aparecer">
+            <span class="bolinha"></span>
+            <div class="card">
+              <p class="data">08/2025 – 08/2026 · Vitória</p>
+              <h3>Estagiário de Desenvolvimento</h3>
+              <p class="empresa">Athenas Tecnologia em Softwares</p>
+              <ul>
+                <li>Desenvolvimento e manutenção em Delphi, com banco Firebird.</li>
+                <li>Testes unitários e automatizados.</li>
+                <li>Resolução de ordens de serviço: análise, debugging e correção.</li>
+                <li>Kanban para gestão de tarefas e fluxo de trabalho.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="item aparecer">
+            <span class="bolinha"></span>
+            <div class="card">
+              <p class="data">07/2024 – 08/2025 · Vitória</p>
+              <h3>Jovem Aprendiz</h3>
+              <p class="empresa">Gol Linhas Aéreas</p>
+              <ul>
+                <li>Proposta de efetivação da gerência após três meses, por desempenho acima da média.</li>
+                <li>Anfitrião e suporte no embarque, inclusive na alta temporada, cumprindo os prazos operacionais.</li>
+                <li>Treinamento de novos colaboradores para manter o atendimento padronizado.</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJETO ========== -->
+    <section class="secao" id="projeto">
+      <div class="container">
+        <h2 class="titulo aparecer"><span>03</span> Projeto em destaque</h2>
+
+        <div class="projeto aparecer">
+          <div class="projeto-texto">
+            <h3>Controle de apontamento de horas</h3>
+            <p class="empresa">Delphi · Firebird · sistema corporativo</p>
+            <p>Funcionalidade que garante a carga horária mínima diária de cada usuário e mostra, em tempo real, quantas horas ainda faltam.</p>
+            <ul>
+              <li>Parâmetro individual por usuário para ligar o controle e definir a carga mínima.</li>
+              <li>Bloqueio ao salvar quando o total do dia não chega ao mínimo.</li>
+              <li>Hora final não pode ser maior que a atual, e novo apontamento exige o anterior encerrado.</li>
+              <li>Troca de empresa bloqueada com apontamento em aberto, inclusive de dias anteriores, levando direto ao registro pendente.</li>
+              <li>Gravação só quando a empresa ou filial realmente muda, sem duplicidade.</li>
+            </ul>
+            <p><strong>Resultado:</strong> mais integridade das informações, menos inconsistências e controle de jornada mais firme.</p>
+          </div>
+
+          <div class="projeto-codigo">
+            <div class="janela">
+              <div class="janela-topo"><i></i><i></i><i></i><span>regra.pas</span></div>
+<pre><span class="com">// exemplo simplificado da regra de bloqueio</span>
+<span class="pal">if</span> ControleAtivo(Usuario) <span class="pal">and</span>
+   (HorasNoDia &lt; CargaMinima) <span class="pal">then</span>
+  <span class="pal">raise</span> Exception.Create(
+    <span class="txt">'Faltam '</span> + FormatHoras(
+      CargaMinima - HorasNoDia));</pre>
+            </div>
+            <p class="aviso">Trecho ilustrativo, não é o código real do sistema.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== IA ========== -->
+    <section class="secao" id="ia">
+      <div class="container">
+        <h2 class="titulo aparecer"><span>04</span> IA como vantagem de trabalho</h2>
+
+        <p class="principio aparecer">
+          A IA acelera o trabalho. <span class="destaque">A decisão e a responsabilidade continuam comigo.</span>
+        </p>
+
+        <ol class="fluxo aparecer">
+          <li><small>passo 1</small><strong>Entendo o problema</strong><span>Leio a ordem de serviço, o requisito e a regra de negócio antes de pedir qualquer coisa.</span></li>
+          <li><small>passo 2</small><strong>A IA propõe</strong><span>Uso o Claude Code para investigar a causa raiz, sugerir caminhos e montar a primeira versão.</span></li>
+          <li><small>passo 3</small><strong>Eu reviso e testo</strong><span>Valido o resultado contra o sistema e crio testes para provar que funciona.</span></li>
+          <li><small>passo 4</small><strong>Entrego com segurança</strong><span>Build, deploy e acompanhamento, com Git organizado em branches e releases.</span></li>
+        </ol>
+
+        <div class="areas aparecer">
+          <div class="area">
+            <h3>Debugging mais rápido</h3>
+            <p>Menos tempo caçando erro e mais tempo resolvendo a causa raiz do problema.</p>
+          </div>
+          <div class="area">
+            <h3>Refatoração com rede de proteção</h3>
+            <p>Melhoro código existente com testes gerados e revisados, sem quebrar o que já funciona.</p>
+          </div>
+          <div class="area">
+            <h3>Testes e documentação</h3>
+            <p>Gero testes e documentação técnica que normalmente ficariam para depois.</p>
+          </div>
+          <div class="area">
+            <h3>Scripts e automação</h3>
+            <p>Automatizo tarefas repetitivas e processos de dados (ETL) para ganhar tempo no dia a dia.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== STACK ========== -->
+    <section class="secao" id="stack">
+      <div class="container">
+        <h2 class="titulo aparecer"><span>05</span> Stack e conhecimentos</h2>
+
+        <ul class="tags aparecer">
+          <li>Delphi / Object Pascal</li>
+          <li>Firebird / SQL</li>
+          <li>PHP</li>
+          <li>JavaScript</li>
+          <li>Git / GitHub</li>
+          <li>Python</li>
+          <li>Testes automatizados</li>
+          <li>Kanban</li>
+          <li>ETL</li>
+          <li>Claude Code</li>
+          <li>TypeScript</li>
+          <li>HTML · CSS</li>
+        </ul>
+
+        <div class="areas aparecer">
+          <div class="area">
+            <h3>Desenvolvimento e dados</h3>
+            <p>Sistemas corporativos em Delphi, web com PHP e JavaScript, SQL, debugging, testes, ETL e automação de tarefas.</p>
+          </div>
+          <div class="area">
+            <h3>IA no desenvolvimento</h3>
+            <p>Claude Code para acelerar debugging, refatoração, geração de testes e documentação técnica.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTATO ========== -->
+    <section class="secao contato" id="contato">
+      <div class="container">
+        <h2 class="titulo aparecer"><span>06</span> Contato</h2>
+
+        <div class="contato-caixa aparecer">
+          <h3>Vamos conversar?</h3>
+          <p>Estou aberto a conversas sobre vagas e projetos em desenvolvimento de software.</p>
+
+          <ul class="contatos">
+            <li>
+              <span>e-mail</span>
+              <code id="email">arthurbermond04@gmail.com</code>
+              <button class="copiar" type="button" data-alvo="email">copiar</button>
+            </li>
+            <li>
+              <span>linkedin</span>
+              <a href="https://www.linkedin.com/in/arthur-bermond-10b3942a9/" target="_blank" rel="noopener">linkedin.com/in/arthur-bermond</a>
+            </li>
+            <li>
+              <span>github</span>
+              <a href="https://github.com/Arthur-bermond04" target="_blank" rel="noopener">github.com/Arthur-bermond04</a>
+            </li>
+            <li>
+              <span>gitlab</span>
+              <a href="https://gitlab.com/Arthur-bermond04" target="_blank" rel="noopener">gitlab.com/Arthur-bermond04</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p>© 2026 Arthur Bermond de Souza Santos · Vitória, ES</p>
+    <a href="#inicio">voltar ao topo ↑</a>
+  </footer>
+
+  <!-- aviso que aparece quando copia -->
+  <div class="aviso-copiado" id="avisoCopiado" role="status">Copiado!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
